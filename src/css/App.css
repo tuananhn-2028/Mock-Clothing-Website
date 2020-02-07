@@ -1,0 +1,23 @@
+
+.App {
+  display: block;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  background-color: #666666c2;
+  
+}
+.content {
+  display:block;
+  position:relative;
+  margin-top:6em;
+  margin-bottom: 1em; 
+}
+
+
+.footer {
+  display: block;
+  background-color: lime;
+  margin-top: 5%;
+}
