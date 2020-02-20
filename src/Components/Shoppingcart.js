@@ -2,21 +2,18 @@ import React from 'react';
 import '../css/Shoppingcart.css'
 
 class Shoppingcart extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      item_list: []
-    }
-  }
+  
 
   createItemList = () => {
     let ul = [];
-    for (let elem of this.state.item_list) {
+    this.props.shoppingList.map((item, index) => {
       ul.push(
-        <li>{elem}</li>
+        <li key={index.toString()}>{item.name}: {item.price}</li>
       );
-    }
+    })
+      
     
+    console.log(ul);
     return ul;
   }
 
