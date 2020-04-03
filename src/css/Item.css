@@ -6,15 +6,17 @@
 .item-row-container {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3%;
+    flex-wrap: wrap;
 }
 
 .item {
-    width: 9em;
-    height: 9em;
+    width: 27%;
+    height: 12em;
     background-color: white;
     margin: 0 auto 0 auto;
     position: relative;
+    margin-bottom: 3%;
+
 }
 
 .item-name {

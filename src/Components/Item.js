@@ -10,7 +10,11 @@ const Item = (props) => {
         <div className="item-price">
         {props.price}
         </div>
-        <ShoppingCartButton />
+        <ShoppingCartButton 
+        addItemToList={props.addItemToList}
+        name={props.name}
+        price={props.price}
+        />
       </div>
       
 
@@ -20,7 +24,16 @@ const Item = (props) => {
 
 const ShoppingCartButton = (props) => {
   return(
-    <img class="shopping-cart-img" src={require('../img/shopping_c.jpg')} />
+    <img className="shopping-cart-img" src={require('../img/shopping_c.jpg')}
+     onClick={() => {
+       props.addItemToList(
+         {
+           name: props.name,
+           price: props.price
+         }
+       )
+     }}
+    />
   )
 }
 export default Item;

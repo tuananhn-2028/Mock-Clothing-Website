@@ -21,3 +21,18 @@
   background-color: lime;
   margin-top: 5%;
 }
+
+.modal-hide {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
+.show-cart-button {
+  display: flex;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 65%;
+}
