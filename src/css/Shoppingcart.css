@@ -1,0 +1,11 @@
+.modal-hide {
+    display: none;
+}
+
+.modal-show {
+    display: block;
+}
+
+.shopping-cart-modal {
+    z-index: 1;
+}
